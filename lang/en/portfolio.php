@@ -1,0 +1,130 @@
+<?php
+
+return [
+    'nav' => [
+        'home' => 'Home',
+        'about' => 'About',
+        'skills' => 'Skills',
+        'projects' => 'Projects',
+        'experiences' => 'Experience',
+        'contact' => 'Contact',
+        'cv' => 'Resume',
+        'theme' => 'Toggle theme',
+        'language' => 'Choose language',
+        'lang_fr' => 'Français',
+        'lang_en' => 'English',
+    ],
+
+    'home' => [
+        'title_suffix' => 'Portfolio',
+        'i_am' => 'I am',
+        'view_projects' => 'View my projects',
+        'download_cv' => 'Download my resume',
+        'contact_me' => 'Contact me',
+        'scroll' => 'Scroll',
+        'available' => 'Available for new projects',
+        'years_experience' => 'years of experience',
+        'stats' => [
+            'applications' => 'Applications',
+            'tickets' => 'Tickets resolved',
+            'equipment' => 'Equipment managed',
+            'years' => 'Years of experience',
+            'projects' => 'Projects',
+            'commits' => 'Git Commits',
+            'technologies' => 'Technologies',
+            'motivation' => 'Motivation',
+        ],
+        'tech_tag' => 'Stack',
+        'tech_title' => 'Technologies I master',
+        'view_all_skills' => 'View all skills',
+        'view_all_experience' => 'View full experience',
+        'recent_projects_tag' => 'Portfolio',
+        'recent_projects_title' => 'Recent projects',
+        'view_all_projects' => 'View all projects',
+        'testimonials_tag' => 'Testimonials',
+        'testimonials_title' => 'What people say about me',
+        'cta_title' => 'Ready to collaborate?',
+        'cta_text' => 'Let\'s discuss your next project, an opportunity, or an IT support need.',
+        'default_greeting' => 'Hello,',
+        'default_roles' => 'User Support,IT Asset Manager,Laravel Web Developer',
+    ],
+
+    'about' => [
+        'title' => 'About',
+        'tag' => 'About',
+        'heading' => 'Who am I?',
+        'job_title' => 'IT Support & Web Development',
+        'location' => 'Madagascar',
+        'contact_me' => 'Contact me',
+        'download_cv' => 'Download resume',
+        'default_text' => 'IT professional with a Master II from the National School of Informatics (ENI), I work as User Support & IT Asset Manager at NGO PIVOT. I provide technical support, IT asset management, and Laravel development to optimize IT processes.',
+    ],
+
+    'skills' => [
+        'title' => 'Skills',
+        'tag' => 'Skills',
+        'heading' => 'My expertise',
+    ],
+
+    'projects' => [
+        'title' => 'Projects',
+        'tag' => 'Projects',
+        'heading' => 'My work',
+        'search' => 'Search',
+        'search_placeholder' => 'Name or description...',
+        'technology' => 'Technology',
+        'all' => 'All',
+        'filter' => 'Filter',
+        'empty' => 'No projects found.',
+        'demo' => 'Demo',
+        'filters' => [
+            'all' => 'All',
+            'laravel' => 'Laravel',
+            'php' => 'PHP',
+            'support' => 'IT Support',
+            'shopify' => 'Shopify',
+            'java' => 'Java',
+        ],
+    ],
+
+    'experiences' => [
+        'title' => 'Experience',
+        'tag' => 'Career',
+        'heading' => 'Experience & Education',
+        'experiences' => 'Experience',
+        'education' => 'Education',
+    ],
+
+    'contact' => [
+        'title' => 'Contact',
+        'tag' => 'Contact',
+        'heading' => 'Let\'s work together',
+        'subtitle' => 'Stay in touch',
+        'intro' => 'Feel free to contact me to discuss a project, an opportunity, or simply to connect.',
+        'phone' => 'Phone',
+        'name' => 'Name',
+        'email' => 'Email',
+        'subject' => 'Subject',
+        'message' => 'Message',
+        'send' => 'Send',
+    ],
+
+    'footer' => [
+        'subtitle' => 'Laravel Portfolio',
+        'tagline' => 'User Support · IT Asset Management · Laravel Development',
+        'navigation' => 'Navigation',
+        'contact' => 'Contact',
+        'social' => 'Social',
+        'rights' => 'All rights reserved.',
+    ],
+
+    'messages' => [
+        'contact_success' => 'Your message has been sent successfully!',
+        'cv_unavailable' => 'Resume not available.',
+    ],
+
+    'mail' => [
+        'name' => 'Name:',
+        'subject' => 'Subject:',
+    ],
+];

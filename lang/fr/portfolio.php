@@ -1,0 +1,130 @@
+<?php
+
+return [
+    'nav' => [
+        'home' => 'Accueil',
+        'about' => 'À propos',
+        'skills' => 'Compétences',
+        'projects' => 'Projets',
+        'experiences' => 'Expériences',
+        'contact' => 'Contact',
+        'cv' => 'CV',
+        'theme' => 'Changer le thème',
+        'language' => 'Choisir la langue',
+        'lang_fr' => 'Français',
+        'lang_en' => 'English',
+    ],
+
+    'home' => [
+        'title_suffix' => 'Portfolio',
+        'i_am' => 'Je suis',
+        'view_projects' => 'Voir mes projets',
+        'download_cv' => 'Télécharger mon CV',
+        'contact_me' => 'Me contacter',
+        'scroll' => 'Défiler',
+        'available' => 'Disponible pour de nouveaux projets',
+        'years_experience' => 'ans d\'expérience',
+        'stats' => [
+            'applications' => 'Applications',
+            'tickets' => 'Tickets résolus',
+            'equipment' => 'Équipements gérés',
+            'years' => 'Années d\'expérience',
+            'projects' => 'Projets',
+            'commits' => 'Commits Git',
+            'technologies' => 'Technologies',
+            'motivation' => 'Motivation',
+        ],
+        'tech_tag' => 'Stack',
+        'tech_title' => 'Technologies maîtrisées',
+        'view_all_skills' => 'Voir toutes les compétences',
+        'view_all_experience' => 'Voir tout le parcours',
+        'recent_projects_tag' => 'Portfolio',
+        'recent_projects_title' => 'Projets récents',
+        'view_all_projects' => 'Voir tous les projets',
+        'testimonials_tag' => 'Témoignages',
+        'testimonials_title' => 'Ce qu\'on dit de moi',
+        'cta_title' => 'Prêt à collaborer ?',
+        'cta_text' => 'Discutons de votre prochain projet, d\'une opportunité ou d\'un besoin en support IT.',
+        'default_greeting' => 'Bonjour,',
+        'default_roles' => 'Support Utilisateur,Gestionnaire de Parc Informatique,Développeur Web Laravel',
+    ],
+
+    'about' => [
+        'title' => 'À propos',
+        'tag' => 'À propos',
+        'heading' => 'Qui suis-je ?',
+        'job_title' => 'Support Informatique & Développement Web',
+        'location' => 'Madagascar',
+        'contact_me' => 'Me contacter',
+        'download_cv' => 'Télécharger CV',
+        'default_text' => "Professionnelle de l'informatique titulaire d'un Master II de l'École Nationale d'Informatique (ENI), j'occupe le poste de Support Utilisateur & Gestionnaire de Parc Informatique à l'ONG PIVOT. J'assure le support technique, la gestion du parc IT et le développement de solutions Laravel.",
+    ],
+
+    'skills' => [
+        'title' => 'Compétences',
+        'tag' => 'Compétences',
+        'heading' => 'Mes expertises',
+    ],
+
+    'projects' => [
+        'title' => 'Projets',
+        'tag' => 'Projets',
+        'heading' => 'Mes réalisations',
+        'search' => 'Rechercher',
+        'search_placeholder' => 'Nom ou description...',
+        'technology' => 'Technologie',
+        'all' => 'Tous',
+        'filter' => 'Filtrer',
+        'empty' => 'Aucun projet trouvé.',
+        'demo' => 'Démo',
+        'filters' => [
+            'all' => 'Tous',
+            'laravel' => 'Laravel',
+            'php' => 'PHP',
+            'support' => 'Support IT',
+            'shopify' => 'Shopify',
+            'java' => 'Java',
+        ],
+    ],
+
+    'experiences' => [
+        'title' => 'Expériences',
+        'tag' => 'Parcours',
+        'heading' => 'Expériences & Formation',
+        'experiences' => 'Expériences',
+        'education' => 'Formation',
+    ],
+
+    'contact' => [
+        'title' => 'Contact',
+        'tag' => 'Contact',
+        'heading' => 'Travaillons ensemble',
+        'subtitle' => 'Restons en contact',
+        'intro' => 'N\'hésitez pas à me contacter pour discuter d\'un projet, d\'une opportunité ou simplement pour échanger.',
+        'phone' => 'Téléphone',
+        'name' => 'Nom',
+        'email' => 'Email',
+        'subject' => 'Sujet',
+        'message' => 'Message',
+        'send' => 'Envoyer',
+    ],
+
+    'footer' => [
+        'subtitle' => 'Portfolio Laravel',
+        'tagline' => 'Support Utilisateur · Gestion de Parc IT · Développement Laravel',
+        'navigation' => 'Navigation',
+        'contact' => 'Contact',
+        'social' => 'Réseaux sociaux',
+        'rights' => 'Tous droits réservés.',
+    ],
+
+    'messages' => [
+        'contact_success' => 'Votre message a été envoyé avec succès !',
+        'cv_unavailable' => 'CV non disponible.',
+    ],
+
+    'mail' => [
+        'name' => 'Nom :',
+        'subject' => 'Sujet :',
+    ],
+];
