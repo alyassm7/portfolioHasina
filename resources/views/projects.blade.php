@@ -57,9 +57,10 @@
     window.projectFilterMap = {
         laravel: ['Laravel', 'Livewire'],
         php: ['PHP', 'Laravel'],
-        support: ['Support', 'IT', 'Ticket'],
+        support: ['Support', 'IT', 'Ticket', 'SLA', 'Zabbix', 'Grafana', 'Process'],
         shopify: ['Shopify'],
-        java: ['Java', 'Swing']
+        java: ['Java', 'Swing'],
+        odoo: ['Odoo', 'Python', 'Purchase', 'Warehouse']
     };
 </script>
 @endpush

@@ -24,6 +24,7 @@ Route::middleware('locale')->group(function () {
     Route::get('/about', [PortfolioController::class, 'about'])->name('about');
     Route::get('/skills', [PortfolioController::class, 'skills'])->name('skills');
     Route::get('/projects', [PortfolioController::class, 'projects'])->name('projects');
+    Route::get('/projects/{slug}', [PortfolioController::class, 'projectShow'])->name('projects.show');
     Route::get('/experiences', [PortfolioController::class, 'experiences'])->name('experiences');
     Route::get('/contact', [ContactController::class, 'index'])->name('contact');
     Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

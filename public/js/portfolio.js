@@ -218,8 +218,8 @@
             ctx.translate(p.x, p.y);
             ctx.rotate(p.rot);
             ctx.globalAlpha = p.opacity;
-            ctx.strokeStyle = 'rgba(94, 234, 212, 0.6)';
-            ctx.fillStyle = 'rgba(45, 212, 191, 0.15)';
+            ctx.strokeStyle = 'rgba(192, 132, 252, 0.65)';
+            ctx.fillStyle = 'rgba(168, 85, 247, 0.18)';
             ctx.lineWidth = 0.8;
             const s = p.size * (1 + Math.sin(p.pulse) * 0.15);
 
@@ -244,7 +244,7 @@
                     ctx.beginPath(); ctx.arc(0, 0, s, 0, Math.PI * 2); ctx.stroke(); break;
                 case 'dot':
                     ctx.beginPath(); ctx.arc(0, 0, s * 0.5, 0, Math.PI * 2);
-                    ctx.fillStyle = 'rgba(59, 130, 246, 0.5)'; ctx.fill(); break;
+                    ctx.fillStyle = 'rgba(251, 113, 133, 0.5)'; ctx.fill(); break;
                 case 'line':
                     ctx.beginPath(); ctx.moveTo(-s * 2, 0); ctx.lineTo(s * 2, 0); ctx.stroke(); break;
                 case 'diamond':

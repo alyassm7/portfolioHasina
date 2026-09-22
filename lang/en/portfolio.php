@@ -77,6 +77,10 @@ return [
         'filter' => 'Filter',
         'empty' => 'No projects found.',
         'demo' => 'Demo',
+        'view' => 'View project',
+        'back' => 'Back to projects',
+        'featured' => 'Featured project',
+        'related' => 'Other projects',
         'filters' => [
             'all' => 'All',
             'laravel' => 'Laravel',
@@ -84,6 +88,17 @@ return [
             'support' => 'IT Support',
             'shopify' => 'Shopify',
             'java' => 'Java',
+            'odoo' => 'Odoo',
+        ],
+        'case' => [
+            'problem' => 'Problem',
+            'solution' => 'Solution',
+            'modules' => 'Features & modules',
+            'architecture' => 'Architecture',
+            'documentation' => 'Project documentation',
+            'results' => 'Expected results',
+            'skills' => 'Skills demonstrated',
+            'features' => 'Features',
         ],
     ],
 

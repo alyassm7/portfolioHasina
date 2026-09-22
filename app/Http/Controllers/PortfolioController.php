@@ -52,6 +52,19 @@ class PortfolioController extends Controller
         ]);
     }
 
+    public function projectShow(string $slug): View
+    {
+        $project = Project::where('slug', $slug)->firstOrFail();
+
+        return view('project-show', [
+            'project' => $project,
+            'relatedProjects' => Project::where('id', '!=', $project->id)
+                ->orderBy('order')
+                ->limit(3)
+                ->get(),
+        ]);
+    }
+
     public function experiences(): View
     {
         return view('experiences', [

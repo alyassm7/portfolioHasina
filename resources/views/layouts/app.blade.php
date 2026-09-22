@@ -6,7 +6,7 @@
     <meta name="description" content="{{ $settings['meta_description'] ?? 'Portfolio Hasina Ralison' }}">
     <meta name="keywords" content="{{ $settings['meta_keywords'] ?? '' }}">
     <meta name="author" content="{{ $settings['site_name'] ?? 'Hasina Ralison' }}">
-    <meta name="theme-color" content="#09090b">
+    <meta name="theme-color" content="#120A2A">
     <title>@yield('title', $settings['site_title'] ?? 'Portfolio')</title>
 
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">

@@ -15,6 +15,7 @@ class Project extends Model
         'description',
         'technologies',
         'features',
+        'case_study',
         'github_url',
         'demo_url',
         'image',
@@ -27,6 +28,7 @@ class Project extends Model
         return [
             'technologies' => 'array',
             'features' => 'array',
+            'case_study' => 'array',
             'is_featured' => 'boolean',
         ];
     }
@@ -34,5 +36,24 @@ class Project extends Model
     public function localizedFeatures(?string $locale = null): array
     {
         return LocaleContent::asArray($this->features ?? [], $locale);
+    }
+
+    public function caseStudyField(string $key, ?string $locale = null): string
+    {
+        $value = $this->case_study[$key] ?? null;
+
+        return LocaleContent::asString($value, $locale);
+    }
+
+    public function caseStudyList(string $key, ?string $locale = null): array
+    {
+        $value = $this->case_study[$key] ?? [];
+
+        return LocaleContent::asArray($value, $locale);
+    }
+
+    public function hasCaseStudy(): bool
+    {
+        return ! empty($this->case_study);
     }
 }

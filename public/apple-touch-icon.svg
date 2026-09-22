@@ -1,13 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-label="HR">
   <defs>
     <linearGradient id="hr-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FBBF24"/>
-      <stop offset="35%" stop-color="#3B82F6"/>
-      <stop offset="70%" stop-color="#2DD4BF"/>
-      <stop offset="100%" stop-color="#86EFAC"/>
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="50%" stop-color="#C026D3"/>
+      <stop offset="100%" stop-color="#FB7185"/>
     </linearGradient>
   </defs>
-  <rect width="180" height="180" rx="40" fill="#09090b"/>
+  <rect width="180" height="180" rx="40" fill="#120A2A"/>
   <rect x="6" y="6" width="168" height="168" rx="34" fill="none" stroke="url(#hr-gradient)" stroke-width="5"/>
   <text x="90" y="118" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="url(#hr-gradient)">HR</text>
 </svg>

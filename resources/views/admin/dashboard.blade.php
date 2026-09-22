@@ -8,18 +8,18 @@
         $hour = (int) now()->format('H');
         $greeting = $hour < 12 ? 'Bonjour' : ($hour < 18 ? 'Bon après-midi' : 'Bonsoir');
         $statCards = [
-            ['icon' => 'folder-open', 'label' => 'Projets', 'value' => $stats['projects'], 'color' => '#3B82F6', 'route' => 'admin.projects.index'],
-            ['icon' => 'bolt', 'label' => 'Compétences', 'value' => $stats['skills'], 'color' => '#2DD4BF', 'route' => 'admin.skills.index'],
-            ['icon' => 'briefcase', 'label' => 'Expériences', 'value' => $stats['experiences'], 'color' => '#14B8A6', 'route' => 'admin.experiences.index'],
-            ['icon' => 'graduation-cap', 'label' => 'Formations', 'value' => $stats['educations'], 'color' => '#FBBF24', 'route' => 'admin.educations.index'],
-            ['icon' => 'star', 'label' => 'Témoignages', 'value' => $stats['testimonials'], 'color' => '#86EFAC', 'route' => 'admin.testimonials.index'],
+            ['icon' => 'folder-open', 'label' => 'Projets', 'value' => $stats['projects'], 'color' => '#9333EA', 'route' => 'admin.projects.index'],
+            ['icon' => 'bolt', 'label' => 'Compétences', 'value' => $stats['skills'], 'color' => '#A855F7', 'route' => 'admin.skills.index'],
+            ['icon' => 'briefcase', 'label' => 'Expériences', 'value' => $stats['experiences'], 'color' => '#C026D3', 'route' => 'admin.experiences.index'],
+            ['icon' => 'graduation-cap', 'label' => 'Formations', 'value' => $stats['educations'], 'color' => '#E11D48', 'route' => 'admin.educations.index'],
+            ['icon' => 'star', 'label' => 'Témoignages', 'value' => $stats['testimonials'], 'color' => '#FB7185', 'route' => 'admin.testimonials.index'],
             ['icon' => 'envelope', 'label' => 'Messages non lus', 'value' => $stats['messages_unread'], 'color' => '#ef4444', 'route' => 'admin.messages.index', 'badge' => $stats['messages_total'].' au total'],
         ];
         $quickActions = [
-            ['icon' => 'plus', 'label' => 'Nouveau projet', 'route' => 'admin.projects.create', 'color' => '#3B82F6'],
-            ['icon' => 'plus', 'label' => 'Nouvelle compétence', 'route' => 'admin.skills.create', 'color' => '#2DD4BF'],
-            ['icon' => 'envelope-open-text', 'label' => 'Voir les messages', 'route' => 'admin.messages.index', 'color' => '#FBBF24'],
-            ['icon' => 'sliders-h', 'label' => 'Paramètres', 'route' => 'admin.settings.edit', 'color' => '#86EFAC'],
+            ['icon' => 'plus', 'label' => 'Nouveau projet', 'route' => 'admin.projects.create', 'color' => '#9333EA'],
+            ['icon' => 'plus', 'label' => 'Nouvelle compétence', 'route' => 'admin.skills.create', 'color' => '#A855F7'],
+            ['icon' => 'envelope-open-text', 'label' => 'Voir les messages', 'route' => 'admin.messages.index', 'color' => '#E11D48'],
+            ['icon' => 'sliders-h', 'label' => 'Paramètres', 'route' => 'admin.settings.edit', 'color' => '#FB7185'],
         ];
     @endphp
 
