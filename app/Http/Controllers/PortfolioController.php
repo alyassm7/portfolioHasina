@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Certificate;
 use App\Models\Education;
 use App\Models\Experience;
 use App\Models\Project;
@@ -70,6 +71,7 @@ class PortfolioController extends Controller
         return view('experiences', [
             'experiences' => Experience::orderBy('order')->get(),
             'educations' => Education::orderBy('order')->get(),
+            'certificates' => Certificate::orderBy('order')->get(),
         ]);
     }
 }

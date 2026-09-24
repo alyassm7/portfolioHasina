@@ -52,6 +52,51 @@
                             </div>
                         </div>
                     @endforeach
+
+                    @if($certificates->isNotEmpty())
+                        <h3 class="mb-4 mt-5" data-aos="fade-left">
+                            <i class="fas fa-certificate me-2 gradient-text-inline"></i>{{ __('portfolio.experiences.certificates') }}
+                        </h3>
+                        <div class="row g-3">
+                            @foreach($certificates as $cert)
+                                <div class="col-12" data-aos="fade-left" data-aos-delay="{{ $loop->index * 80 }}">
+                                    <div class="certificate-card glass-card tilt-card" data-tilt data-tilt-max="5">
+                                        @if($cert->fileUrl() && $cert->isImage())
+                                            <a href="{{ $cert->fileUrl() }}" target="_blank" rel="noopener" class="certificate-preview">
+                                                <img src="{{ $cert->fileUrl() }}" alt="{{ $cert->title }}" loading="lazy">
+                                            </a>
+                                        @elseif($cert->fileUrl() && $cert->isPdf())
+                                            <a href="{{ $cert->fileUrl() }}" target="_blank" rel="noopener" class="certificate-pdf-preview">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </a>
+                                        @else
+                                            <div class="certificate-pdf-preview">
+                                                <i class="fas fa-certificate"></i>
+                                            </div>
+                                        @endif
+                                        <div class="certificate-body">
+                                            <div class="d-flex justify-content-between align-items-start gap-2">
+                                                <div>
+                                                    <h5 class="mb-1">{{ $cert->title }}</h5>
+                                                    @if($cert->issuer)
+                                                        <p class="mb-0 text-muted">{{ $cert->issuer }}</p>
+                                                    @endif
+                                                </div>
+                                                @if($cert->year)
+                                                    <span class="edu-year">{{ $cert->year }}</span>
+                                                @endif
+                                            </div>
+                                            @if($cert->fileUrl())
+                                                <a href="{{ $cert->fileUrl() }}" target="_blank" rel="noopener" class="btn btn-outline-accent btn-sm mt-3">
+                                                    <i class="fas fa-eye me-1"></i>{{ __('portfolio.experiences.view_certificate') }}
+                                                </a>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

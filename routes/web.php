@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\CertificateController as AdminCertificateController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EducationController as AdminEducationController;
 use App\Http\Controllers\Admin\ExperienceController as AdminExperienceController;
@@ -42,6 +43,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::resource('skills', AdminSkillController::class)->except(['show']);
         Route::resource('experiences', AdminExperienceController::class)->except(['show']);
         Route::resource('educations', AdminEducationController::class)->except(['show']);
+        Route::resource('certificates', AdminCertificateController::class)->except(['show']);
         Route::resource('testimonials', AdminTestimonialController::class)->except(['show']);
         Route::resource('messages', AdminMessageController::class)->only(['index', 'show', 'destroy']);
         Route::post('messages/{message}/reply', [AdminMessageController::class, 'reply'])->name('messages.reply');

@@ -37,6 +37,10 @@ class DatabaseSeeder extends Seeder
             ),
             'hero_greeting' => $t('Bonjour,', 'Hello,'),
             'hero_name' => 'Ralison Hasiniaina Aimée Samuëla',
+            'hero_job_title' => $t(
+                '(01) Chargée Technologie de l’Information et support et parc IT et maintenance',
+                '(01) IT Technology Officer — Support, IT Assets & Maintenance'
+            ),
             'hero_roles' => $t(
                 'Process Tools & Performance,Support Utilisateur,Gestionnaire de Parc IT,Odoo (Appro / Entrepôt),Développeuse Laravel',
                 'Process Tools & Performance,User Support,IT Asset Manager,Odoo (Purchase / Warehouse),Laravel Developer'

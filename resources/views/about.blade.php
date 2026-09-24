@@ -23,7 +23,10 @@
                 </div>
                 <div class="col-lg-7" data-aos="fade-left">
                     <div class="glass-card p-4 p-lg-5">
-                        <h2 class="mb-4 gradient-text-inline">{{ $settings['hero_name'] ?? 'Hasina Ralison' }}</h2>
+                        <h2 class="mb-2 gradient-text-inline">{{ $settings['hero_name'] ?? 'Hasina Ralison' }}</h2>
+                        @if(!empty($settings['hero_job_title']))
+                            <p class="hero-job-title about-job-title mb-4">{{ $settings['hero_job_title'] }}</p>
+                        @endif
                         <blockquote class="about-quote">
                             <p>{{ $settings['about_text'] ?: __('portfolio.about.default_text') }}</p>
                         </blockquote>

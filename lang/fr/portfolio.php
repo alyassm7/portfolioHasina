@@ -108,6 +108,8 @@ return [
         'heading' => 'Expériences & Formation',
         'experiences' => 'Expériences',
         'education' => 'Formation',
+        'certificates' => 'Certificats',
+        'view_certificate' => 'Voir le certificat',
     ],
 
     'contact' => [

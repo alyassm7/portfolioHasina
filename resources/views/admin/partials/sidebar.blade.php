@@ -36,6 +36,10 @@
                 <span class="sidebar-link-icon"><i class="fas fa-graduation-cap"></i></span>
                 <span class="sidebar-link-text">Formations</span>
             </a>
+            <a href="{{ route('admin.certificates.index') }}" class="sidebar-link {{ request()->routeIs('admin.certificates.*') ? 'active' : '' }}">
+                <span class="sidebar-link-icon"><i class="fas fa-certificate"></i></span>
+                <span class="sidebar-link-text">Certificats</span>
+            </a>
             <a href="{{ route('admin.testimonials.index') }}" class="sidebar-link {{ request()->routeIs('admin.testimonials.*') ? 'active' : '' }}">
                 <span class="sidebar-link-icon"><i class="fas fa-star"></i></span>
                 <span class="sidebar-link-text">Témoignages</span>

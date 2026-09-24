@@ -19,6 +19,7 @@ class Setting extends Model
         return [
             'site_title',
             'hero_greeting',
+            'hero_job_title',
             'hero_roles',
             'about_text',
             'meta_description',

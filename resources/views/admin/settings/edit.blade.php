@@ -28,6 +28,11 @@
                         <input type="text" name="hero_greeting_en" class="form-control" placeholder="English" value="{{ $settings['hero_greeting_en'] ?? '' }}">
                     </div>
                     <div class="col-md-4"><label class="form-label">Nom hero</label><input type="text" name="hero_name" class="form-control" value="{{ $settings['hero_name'] ?? '' }}"></div>
+                    <div class="col-md-8">
+                        <label class="form-label">Poste (sous le nom)</label>
+                        <input type="text" name="hero_job_title_fr" class="form-control mb-2" placeholder="Français" value="{{ $settings['hero_job_title_fr'] ?? '' }}">
+                        <input type="text" name="hero_job_title_en" class="form-control" placeholder="English" value="{{ $settings['hero_job_title_en'] ?? '' }}">
+                    </div>
                     <div class="col-md-4"><label class="form-label">Années d'expérience</label><input type="text" name="experience_years" class="form-control" value="{{ $settings['experience_years'] ?? '' }}"></div>
                     <div class="col-md-6">
                         <label class="form-label">Rôles hero (séparés par virgule)</label>

@@ -19,6 +19,9 @@
                         {{ __('portfolio.home.i_am') }}<br>
                         <span class="gradient-text">{{ $settings['hero_name'] ?? 'Hasina Ralison' }}</span>
                     </h1>
+                    @if(!empty($settings['hero_job_title']))
+                        <p class="hero-job-title gsap-fade">{{ $settings['hero_job_title'] }}</p>
+                    @endif
                     <div class="hero-typed mb-4 gsap-fade">
                         <span id="typed-roles"></span>
                     </div>
