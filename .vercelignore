@@ -1,0 +1,28 @@
+# Local / secrets
+.env
+.env.*
+!.env.example
+
+# Dev
+node_modules
+vendor/bin
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+auth.json
+
+# IDE / OS
+.idea
+.vscode
+*.log
+.DS_Store
+Thumbs.db
+
+# Tests & docs locaux
+tests
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+!storage/framework/**/.gitignore
+!storage/logs/.gitignore
